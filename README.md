@@ -14,3 +14,42 @@
     - desligar;
     - aumentar e diminuir o volume;
     - subir e descer canal.
+
+class TV {
+
+    int tamanhotela;
+    int volume = 5;
+    String marca;
+    int voltagem;
+    int canal;
+    int consumo;
+
+    void ligar() {
+        consumo = tamanhotela * voltagem;
+        System.out.println("O valor do consumo é: " + consumo);
+    }
+
+    void desligar() {
+
+    }
+
+    void aumentarvol() {
+        if (volume < 10) {
+            volume++;
+        }
+    }
+
+    void diminuirvol() {
+        if (volume > 1) {
+            volume--;
+        }
+    }
+
+    void canalmais() {
+        canal++;
+    }
+
+    void canalmenos() {
+        canal--;
+    }
+}
